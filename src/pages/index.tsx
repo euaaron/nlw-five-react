@@ -8,8 +8,8 @@ import { convertDurationToTimeString } from '../shared/utils/convertDurationToTi
 
 import Container  from './index.style';
 
-type Episode = {
-  id: string,
+interface IEpisode {
+  id: string;
   title: string,
   thumbnail: string,
   members: string,
@@ -22,8 +22,8 @@ type Episode = {
 
 type HomeProps = {
   episodes: {
-    latest: Array<Episode>,
-    all: Array<Episode>
+    latest: Array<IEpisode>,
+    all: Array<IEpisode>
   };
 }
 
@@ -70,15 +70,9 @@ export default function Home({ episodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  });
+  const { data } = await api.get('episodes');
 
-  const episodes = data.map(episode => {
+  const episodes: IEpisode[] = data.episodes.map(episode => {
     return {
       id: episode.id,
       title: episode.title,
