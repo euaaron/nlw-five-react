@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Player from "../components/Player";
+import Header from "../shared/components/Header";
+import Player from "../shared/components/Player";
 import GlobalStyles from '../styles/global';
 
 function MyApp({ Component, pageProps }) {

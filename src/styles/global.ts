@@ -29,6 +29,8 @@ export default createGlobalStyle`
     --brightWhite: ${theme.brightWhite};
     --brightYellow: ${theme.brightYellow};
     --color: ${theme.foreground};
+    --darkBlack: ${theme.darkBlack};
+    --dark-gradient: linear-gradient(143.8deg, rgba(28, 30, 38, 0.6) 0%, rgba(40, 42, 54, 0) 100% );
   }
   
   html {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.aside`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ export const Container = styled.section`
     justify-content: center;
     text-align: center;
 
-    background: linear-gradient(143.8deg, rgba(28, 30, 38, 0.6) 0%, rgba(40, 42, 54, 0) 100% );
+    background: var(--dark-gradient);
     border: 1px dashed var(--brightBlack);
     border-radius: 1rem;
     padding: 4rem;

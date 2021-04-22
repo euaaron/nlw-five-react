@@ -1,4 +1,4 @@
-import Img from '../shared/GrayImg';
+import Img from '../GrayImg';
 import { Container } from './styles';
 
 export default function Player() {

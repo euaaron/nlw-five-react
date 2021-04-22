@@ -1,7 +1,7 @@
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 
-import Img from '../shared/GrayImg';
+import Img from '../GrayImg';
 import { Container } from './styles';
 
 export default function Header() {
