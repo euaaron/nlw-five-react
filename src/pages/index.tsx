@@ -6,7 +6,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../shared/utils/convertDurationToTimeString';
 
-import Container  from './index.style';
+import Container  from './style';
 
 interface IEpisode {
   id: string;
@@ -70,7 +70,13 @@ export default function Home({ episodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes');
+  const { data } = await api.get('episodes', {
+    params: {
+      _limit: 12,
+      _sort: 'published_at',
+      _order: 'desc'
+    }
+  });
 
   const episodes: IEpisode[] = data.episodes.map(episode => {
     return {
