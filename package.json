@@ -19,6 +19,7 @@
     "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
     "@types/styled-components": "^5.1.9",
+    "babel-plugin-styled-components": "^1.12.0",
     "date-fns": "^2.21.1",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"
