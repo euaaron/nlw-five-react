@@ -111,7 +111,7 @@ export default function Home({ episodes }: HomeProps) {
         </table>
       </div>
       <Footer>
-        <p>2021 - Made <a href="http://github.com/euaaron">Aaron Carneiro</a> during <a href="https://nextlevelweek.com/">Next Level Week 5</a>.</p>
+        <p>2021 - Made by <a href="http://github.com/euaaron">Aaron Carneiro</a> during <a href="https://nextlevelweek.com/">Next Level Week 5</a>.</p>
         <p>Color scheme based on <a href="https://draculatheme.com/">Dracula Classic</a> by Zeno Rocha.</p>
       </Footer>
     </Container>
@@ -119,7 +119,7 @@ export default function Home({ episodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes', {
+  const { data } = await api.get('/episodes', {
     params: {
       _limit: 12,
       _sort: 'published_at',
