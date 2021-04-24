@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import { api } from "../../services/api";
 import { convertDurationToTimeString } from "../../shared/utils/convertDurationToTimeString";
 
-import { Container, Header, Body } from "./styles";
+import { Container, Header, Body } from "../../styles/episodes";
 
 interface IEpisode {
   id: string;
