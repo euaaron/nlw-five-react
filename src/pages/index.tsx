@@ -17,7 +17,6 @@ interface IEpisode {
   publishedAt: string,
   duration: number,
   durationAsString: string,
-  description: string,
   url: string,
 }
 
