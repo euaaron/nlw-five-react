@@ -8,6 +8,8 @@ import { api } from '../services/api';
 import { convertDurationToTimeString } from '../shared/utils/convertDurationToTimeString';
 
 import { Container, Footer } from '../styles';
+import { useContext } from 'react';
+import { PlayerContext } from '../shared/contexts/PlayerContext';
 
 interface IEpisode {
   id: string;
@@ -28,6 +30,7 @@ type HomeProps = {
 }
 
 export default function Home({ episodes }: HomeProps) {
+  const { play } = useContext(PlayerContext);
 
   return (
     <Container>
@@ -56,7 +59,7 @@ export default function Home({ episodes }: HomeProps) {
                   </footer>
                 </div>
 
-                <button>
+                <button onClick={() => play(episode)}>
                   <img src="/play-green.svg" alt="Play Episode" />
                 </button>
               </li>
@@ -99,7 +102,7 @@ export default function Home({ episodes }: HomeProps) {
                   <td>{episode.publishedAt}</td>
                   <td>{episode.durationAsString}</td>
                   <td>
-                    <button type="button">
+                    <button type="button" onClick={() => play(episode)}>
                       <img src="/play-green.svg" alt="Play Episode" />
                     </button>
                   </td>
