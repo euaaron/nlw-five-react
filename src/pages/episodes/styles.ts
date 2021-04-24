@@ -38,6 +38,11 @@ export const Container = styled.section`
       right: 1rem;
 
       z-index: 5;
+
+      &:hover,
+      &:focus {
+        filter: brightness(1.5) hue-rotate(0deg) saturate(.8);
+      }
     }
 
   }
@@ -63,6 +68,7 @@ export const Header = styled.header`
 
     span {
       color: var(--brightBlack);
+
       &+ span::before {
       content:"●";
       padding-right: 1rem;
