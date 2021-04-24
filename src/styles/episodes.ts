@@ -83,5 +83,5 @@ export const Body = styled.footer`
   line-height: 1.5rem;
   text-align: justify;
 
-  color: var(--foreground);
+  color: var(--brightBlack);
 `;

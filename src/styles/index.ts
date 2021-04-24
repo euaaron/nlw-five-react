@@ -66,7 +66,7 @@ export const Container = styled.section`
                     color: var(--brightBlack);
 
                     a {
-                        color: var(--purple);
+                        color: var(--blue);
                         font-family: Lexend, sans-serif;
                         font-weight: 600;
                         line-height: 1.4rem;
@@ -143,6 +143,7 @@ export const Container = styled.section`
             text-transform: uppercase;
             font: 500 0.75rem Lexend, sans-serif;
             text-align: left;
+            color: var(--light-background)
         }
 
         td:nth-child(4),
@@ -152,6 +153,7 @@ export const Container = styled.section`
 
         td {
             font-size: 0.875rem;
+            color: var(--brightBlack);
 
             img {
                 width: 5rem;
@@ -159,7 +161,7 @@ export const Container = styled.section`
             }
 
             a {
-                color: var(--cyan);
+                color: var(--white);
                 font-family: Lexend, sans-serif;
                 font-weight: 600;
                 line-height: 1.4rem;
@@ -200,7 +202,7 @@ export const Container = styled.section`
 
 export const Footer = styled.footer`
     font-family: Lexend, sans-serif;
-    color: var(--light-background);
+    color: var(--brightBlack);
 
     p {
         line-height: 1.6rem;
