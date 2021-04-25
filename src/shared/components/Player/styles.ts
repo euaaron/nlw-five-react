@@ -83,6 +83,11 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
+  span {
+    display: flex;
+    min-width: 4.2rem;
+  }
 `;
 
 export const Progress = styled.div`
@@ -115,13 +120,16 @@ export const Button = styled.button<ActivityProps>`
   transition: filter 0.4s;
   padding: .8rem;
 
+  filter: ${(props) => (props.isActive) 
+        ? "invert(0.35) sepia(1) saturate(3) hue-rotate(100deg)"
+        : "none"};
+
   &:disabled {
     opacity: 0.6;
     cursor: default;
   }
 
-  &:hover,
-  &:focus {
+  &:hover{
     &:not(:disabled) {
       filter: brightness(0.7);
     }
@@ -136,8 +144,7 @@ export const PlayPause = styled.button<ActivityProps>`
   font-size: 0;
   line-height: 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     &:not(:disabled) {
       background: linear-gradient(
         143.8deg,

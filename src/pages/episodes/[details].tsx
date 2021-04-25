@@ -3,9 +3,9 @@ import ptBR from "date-fns/locale/pt-BR";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 import { api } from "../../services/api";
+import { usePlayer } from "../../shared/contexts/PlayerContext";
 import { convertDurationToTimeString } from "../../shared/utils/convertDurationToTimeString";
 
 import { Container, Header, Body } from "../../styles/episodes";
@@ -27,6 +27,7 @@ type EpisodeProps = {
 };
 
 export default function Episode({ episode }: EpisodeProps) {
+  const { play } = usePlayer();
   return (
     <Container>
       <div>
@@ -41,7 +42,7 @@ export default function Episode({ episode }: EpisodeProps) {
           src={episode.thumbnail}
           objectFit="cover"
         />
-        <button type="button">
+        <button type="button" onClick={() => play(episode)}>
           <img src="/play.svg" alt="Play Podcast" />
         </button>
       </div>
