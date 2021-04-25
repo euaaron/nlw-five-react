@@ -43,7 +43,7 @@ To `build` and `start` the project you need to be with the json-server running.
 
 ### License
 
-This is an academic project... You are rectricted to learn with it, copy, edit and... common, it's a free and open project, you can do ANYTHING that you want and this will never change!
+This is an academic project... You are resctricted to learn with it, copy, edit and... common, it's a free and open project, you can do ANYTHING that you want and this will never change!
 
 ### To Do
 
@@ -54,6 +54,7 @@ This is an academic project... You are rectricted to learn with it, copy, edit a
 - [ ] add a way to allow repeat only once instead repeating forever - 8
 - [ ] add a way to repeat the full playlist instead of a episode - 10
 - [ ] create a real external API with more episodes to show - 3
+- [ ] make it responsive! - 6
 
 ### Contributing
 
