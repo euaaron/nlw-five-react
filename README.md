@@ -73,15 +73,18 @@ This is an academic project... You are rectricted to learn with it, copy, edit a
 ### Credits
 
 <a href="https://github.com/diego3g">
-  <img style="height:auto;" alt="" width="64" height="64" src="https://github.com/diego3g.png" />
+<img style="height:auto;" alt="" width="64" height="64" src="https://github.com/diego3g.png" />
 </a>
 <a href="https://github.com/Roketseat">
-  <img style="height:auto;" alt="" width="64" height="64" src="https://avatars.githubusercontent.com/u/28929274?s=200&v=4" />
-</a>
-<a href="https://github.com/zenorocha">
-  <img style="height:auto;" alt="" width="64" height="64" src="https://github.com/zenorocha.png" />
+<img style="height:auto;" alt="" width="64" height="64" src="https://avatars.githubusercontent.com/u/28929274?s=200&v=4" />
+</a><a href="https://github.com/zenorocha">
+<img style="height:auto;" alt="" width="64" height="64" src="https://github.com/zenorocha.png" />
+</a><a href="https://github.com/solrachix">
+<img style="height:auto;" alt="" width="64" height="64" src="https://github.com/solrachix.png" />
 </a>
 
 As this project was made during a [Rocketseat](https://github.com/Rocketseat)'s event I can't forget to credit their staff for preparing the amazing lessons that directed this project to it's completion and of course [Diego Fernandes](https://github.com/diego3g) for his amazing didatics.
+
+During the week [Carlos Miguel](https://github.com/solrachix) helped me with the URL of where he deployed his json file with the episodes. This URL is still being used and will be changed when I deploy a real API on Heroku.
 
 Also I've used [Dracula Theme](https://draculatheme.com/) (Classic) colors to define the default theme of this project, for that I also credit it's creators.
